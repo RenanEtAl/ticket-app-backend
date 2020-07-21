@@ -1,0 +1,36 @@
+{
+  "name": "ticket-app-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./dist/app/app.js",
+    "dev": "nodemon src/app.ts",
+    "build" : "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RenanEtAl/ticket-app-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RenanEtAl/ticket-app-backend/issues"
+  },
+  "homepage": "https://github.com/RenanEtAl/ticket-app-backend#readme",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^9.1.0",
+    "koa2-cors": "^2.0.6",
+    "mongoose": "^5.9.25"
+  },
+  "devDependencies": {
+    "ts-node": "^8.10.2",
+    "tslint": "^6.1.2",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.9.7"
+  }
+}
