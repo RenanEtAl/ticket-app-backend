@@ -9,11 +9,12 @@ async function databaseSetUp() {
 async function connectToDatabase(): Promise<boolean> {
     // mongoose
     const connectionOptions = {
-        useNewUrlParser: true, useUnifiedTopology: true
+        useUnifiedTopology: true,
+        useNewUrlParser: true
     }
 
     try {
-        await mongoose.connect('mongodb://localhost/ticketsappp', connectionOptions)
+        await mongoose.connect(`${process.env.TICKET_APP_DB_URL}`, connectionOptions)
         console.log('Connected to database')
         return true
     } catch (error) {
