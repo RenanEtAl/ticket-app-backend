@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/RenanEtAl/ticket-app-backend#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "http-status-codes": "^1.4.0",
     "jsonwebtoken": "^8.5.1",
     "koa": "^2.13.0",
     "koa-bodyparser": "^4.3.0",
@@ -28,6 +30,7 @@
     "mongoose": "^5.9.25"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
     "@types/jsonwebtoken": "^8.5.0",
     "@types/koa": "^2.11.3",
     "@types/koa-bodyparser": "^4.3.0",

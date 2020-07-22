@@ -3,7 +3,7 @@
   "extends": ["tslint:recommended", "tslint-eslint-rules"],
   "jsRules": {},
   "rules": {
-    "ordered-imports": true,
+    "ordered-imports": false,
     "quotemark": [true, "single", "avoid-template", "avoid-escape"],
     "object-curly-spacing": [true, "always"],
     "origin-ordered-imports": [true, "one-blank-line"],
