@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-
 import { IUser } from "../../interface/user.interface";
 import { userSchema } from "./User.schema";
 
