@@ -21,7 +21,7 @@ export class Ticket {
                 priority: Joi.string().required(),
             })
             // call validateAsync
-            const value: ITicket = await schema.validateAsync(body)
+            const value: ITicket = await schema.validate(body)
             // get the id
             const { id } = ctx.state.user
             value.user = id
@@ -75,7 +75,7 @@ export class Ticket {
                 priority: Joi.string().optional(),
             })
 
-            const value: ITicket = await schema.validateAsync(body);
+            const value: ITicket = await schema.validate(body);
             await TicketModel.updateOne(
                 {
                     _id: id
